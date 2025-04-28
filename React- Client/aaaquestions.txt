@@ -1,0 +1,20 @@
+
+
+1. on the page cart component i can't access the fields from the cart (the data was
+   taken from the redux but not from the server, does it make a difference? )
+   A.you cant change the values of these variables you can send it through actions
+
+2. when changing the redux, is the data that i am holding in other places in that same component
+   automatically changed or do i have to refresh it again? (like by using selector again) 
+   A. no need to refresh
+
+3. When do i load to the redux? why cant i do it all together when the 
+   App.js arrives to the DOM and that way to save this action in every component that needs this data?
+   A.so that you only make the server "work" hard only when you need it and not for everything.
+
+4. When do i use useEffect? and when does it rehappen ?
+    A. it happens in our eyes once and you use it when you need data from the redux but it might be empty
+
+
+
+    fix that the pusrchase list shouldn t b eemtpy
